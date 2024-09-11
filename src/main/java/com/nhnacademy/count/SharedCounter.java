@@ -38,8 +38,8 @@ public class SharedCounter {
         //TODO#1-3 block 단위로 lock을 걸고 count = count + 1 증가시키고 count를 반환 합니다.
         synchronized (this){
             count = count + 1;
+            return count;
         }
-        return count;
     }
 
     public long decreaseAndGet(){
